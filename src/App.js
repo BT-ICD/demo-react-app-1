@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Clock from './components/Clock';
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <header className="App-header">
         <div>
           <h1>Learn React</h1>
-
+          <Clock/>
         </div>
         
        
