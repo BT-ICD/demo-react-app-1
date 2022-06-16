@@ -8,6 +8,7 @@ function App() {
       <header className="App-header">
         <div>
           <h1>Learn React</h1>
+          <p>Thanks you Heroku!</p>
           <Clock/>
         </div>
         
