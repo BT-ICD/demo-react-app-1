@@ -4,6 +4,25 @@ class Clock extends React.Component{
         super(props);
         this.state={date:new Date()};
     }
+    //Life Cycle Method
+    //Method rns after the component output has been rendered to the DOM
+    componentDidMount(){
+        console.log('componentDidMount');
+        this.timerID= setInterval(
+            ()=>this.tick(),
+            1000
+        );
+    }
+    //Life Cycle Method
+    componentWillUnmount(){
+        console.log('componentWillUnmount');
+        clearInterval(this.timerID);
+    }
+    tick(){
+        this.setState({
+            date:new Date()
+        });
+    }
     render(){
         return(
             <div>
